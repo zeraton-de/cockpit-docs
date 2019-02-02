@@ -11,7 +11,7 @@ pages:
 
   artifacts:
     paths:
-    - public
+    - .vuepress/dist
   
   only:
   - master
