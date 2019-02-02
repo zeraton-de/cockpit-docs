@@ -49,9 +49,10 @@ module.exports = {
         '/documentation/': [
           '',
           'file-structure',
+          'bootstrapping',
+          'configuration',
           'events',
           'services',
-          'configuration',
           'modules',
           'helpers',
         ],
