@@ -72,5 +72,6 @@ module.exports = {
         }
       }
     },
-    dest: 'public'
+    dest: 'public',
+    base: '/cockpit-docs/'
   }
