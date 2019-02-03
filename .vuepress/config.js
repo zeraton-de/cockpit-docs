@@ -24,6 +24,7 @@ module.exports = {
               'basics/docker',
               'basics/configuration',
               'basics/concepts',
+              'basics/acl',
               'basics/field-types',
               'basics/cli',
             ]
@@ -32,8 +33,10 @@ module.exports = {
             title: 'API',
             collapsable: false,
             children: [
+              'api/',
               'api/authentification',
               'api/credentials',
+              'api/resources'
             ]
           },
           {

@@ -13,8 +13,6 @@ Configuration is set during [bootstrapping](/documentation/bootstrapping.md) of 
 
 ## helpers
 
-## helpers
-
 ## base_url
 
 ## base_route

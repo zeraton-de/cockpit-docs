@@ -81,7 +81,7 @@ versions. At time of writing, the following dependencies are available:
 
 ## `modules`
 
-Cockpit consist of multiple [Modules](/guide/basics/concepts.md). Each module
+Cockpit consist of multiple [Modules](/documentation/modules.md). Each module
 lives in it's own directory (same as Add-Ons) and has a `bootstrap.php` which is
 called by the `App::loadModules()` method.
 
