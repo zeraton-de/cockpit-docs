@@ -52,6 +52,7 @@ module.exports = {
           'bootstrapping',
           'configuration',
           'constants',
+          'lime',
           'events',
           'services',
           'modules',

@@ -54,4 +54,6 @@ Create your first user
 
 ### Create Users
 
-Go to `/install` in your favorite browser and follow the instructions.
+Go to `/install` in your favorite browser and follow the instructions. A new
+user called `admin` with password `admin` is created when cockpit has not
+already been installed.
