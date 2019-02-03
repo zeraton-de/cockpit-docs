@@ -94,6 +94,12 @@ The name of the sending party (usually descriptive to identify the system in inc
 
 **Default:** `''`
 
+#### mailer.reply_to (`string`)
+
+Defines an address, the recipient of mails shall reply to.
+
+**Default:** `''`
+
 #### mailer.transport (`string`)
 
 **Default:** `'smtp'` *Unsure wether there actually is an alternative...*
@@ -187,7 +193,7 @@ A custom name for the PHP session used to store authentification and user data f
 **Default:** `md5(__DIR__)`
 
 ::: warning
-Changing this will leed to locking out all currently logged in users which can potentially result in data loss.
+Changing this will lead to locking out all currently logged in users which can potentially result in data loss.
 :::
 
 ### session.init (`bool`)
@@ -300,5 +306,5 @@ A list of modules / plugins disabled.
 **Default:** `[]`
 
 ::: tip
-Users of older Cockpit versions
+Users of older Cockpit versions which were upgraded can either remove `modules/Regions` or disable it here when wanting to get rid of the deprectaed [Region type](/guide/basics/concepts.md#regions).
 :::
