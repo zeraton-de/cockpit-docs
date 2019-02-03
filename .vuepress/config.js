@@ -51,6 +51,7 @@ module.exports = {
           'file-structure',
           'bootstrapping',
           'configuration',
+          'constants',
           'events',
           'services',
           'modules',
@@ -59,7 +60,11 @@ module.exports = {
   
         // fallback
         '/': []
-      }
+      },
+      repo: 'agentejo/cockpit',
+      docsRepo: 'zeraton-de/cockpit-docs',
+      editLinks: true,
+      editLinkText: 'Help us improve this page!'
     },
     markdown: {
       toc: {
