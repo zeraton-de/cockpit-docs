@@ -12,12 +12,11 @@ Cockpit is focusing just on the back-end work to manage content. Rather than wor
 
 ### Key Features
 
-* **Manage flexible content models.** There are no pre-defined content models. Define the content model yourself.
-* **Uncluttered UI.** Cockpit offers you a modern and simple user interface.
-* **One system, consume it the way you want.** Receive your content via a simple API.
+- **Manage flexible content models.** There are no pre-defined content models. Define the content model yourself.
+- **Uncluttered UI.** Cockpit offers you a modern and simple user interface.
+- **One system, consume it the way you want.** Receive your content via a simple API.
 
-
-### The Advantages Of Going Headless:
+### The Advantages Of Going Headless
 
 1. No presentation limitations – build the best design ever.
 2. Content for multiple channels – create content once, consume anywhere.
@@ -25,16 +24,14 @@ Cockpit is focusing just on the back-end work to manage content. Rather than wor
 4. Minimum training required – get started, immediately.
 5. Easy integrations – connect with everything.
 
-
 ## Requirements
 
-
-* **PHP >= 7.1**
-* PDO with **SQLite** support (or MongoDB)
-* (optional: Redis)
-* GD, Zip extension enabled
-* **Apache** (with mod_rewrite enabled) or **nginx**
-* Any modern browser
+- **PHP >= 7.1**
+- PDO with **SQLite** support (or MongoDB)
+- (optional: Redis)
+- GD, Zip extension enabled
+- **Apache** (with mod_rewrite enabled) or **nginx**
+- Any modern browser
 
 ------------------
 
