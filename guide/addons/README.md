@@ -10,17 +10,17 @@ Here we are providing some documentation on to-date *mostly* undocumented addons
 
 Add-Ons are installed into Cockpit by putting the addons source into a directory named after the addons title in the `addons/` folder within your Cockpit installation.
 
-```
+```text
 .
 ├── addons
 │   ├── LayoutComponents
 │   └── CloudStorage
 ├── assets
-| ...
+│ ...
 ├── install
-| ...
+│ ...
 ├── lib
-| ...
+│ ...
 ├── modules
 │   ├── Cockpit
 │   ├── Collections

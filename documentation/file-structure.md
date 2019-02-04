@@ -23,19 +23,20 @@ creation](/guide/#installation).
 ## `lib`
 
 Contains a standard amount of classes and dependecies (PHP) for Cockpit to
-function. 
+function.
 
 ### `lib/Lime`
 
 A basic framework called ["Lime"](/documentation/lime.md) outfitted with:
-* YAML parsing based on Spyc (`lib/Spyc.php`)
-* Markdown parsing based on Parsedown (`lib/Parsedown.php` &
+
+- YAML parsing based on Spyc (`lib/Spyc.php`)
+- Markdown parsing based on Parsedown (`lib/Parsedown.php` &
   `lib/ParsedownExtra.php`) -> `erusev/parsedown`
-* Image handling based on `claviska/simpleimage`
-* Basic Access-Control functionality
-* Basic i18n
-* Cookie handling
-* Asset handling
+- Image handling based on `claviska/simpleimage`
+- Basic Access-Control functionality
+- Basic i18n
+- Cookie handling
+- Asset handling
 
 Components described above are implemente in so-called [helpers](/documentation/helpers.md).
 
@@ -49,9 +50,9 @@ view-rendering is also bound into Lime.
 A connector to either connect to MongoDB or a SQLite storage file/directory for
 data storage.
 
-* `mongodb://` => Usage of `MongoHybrid\Mongo` / `MongoHybrid\MongoLegacy` for
+- `mongodb://` => Usage of `MongoHybrid\Mongo` / `MongoHybrid\MongoLegacy` for
   establishing a connection to a MongoDB server
-* `mongolite://` => Usage of `MongoHybrid\MongoLite` -> `MongoLite\Client` to
+- `mongolite://` => Usage of `MongoHybrid\MongoLite` -> `MongoLite\Client` to
   use an SQLite backend
 
 ### `lib/MongoLite`
@@ -68,16 +69,17 @@ fallback to another SQLite store.
 
 This directory contains composer-based dependencies in their respective
 versions. At time of writing, the following dependencies are available:
-* `claviska/simpleimage`
-* `erusev/parsedown`
-* `erusev/parsedown-extra`
-* `firebase/php-jwt`
-* `ksubileau/color-thief-php`
-* `league/flysystem`
-* `league/color-extractor`
-* `maennchen/zipstream-php`
-* `mongodb/mongodb`
-* `phpmailer/phpmailer`
+
+- `claviska/simpleimage`
+- `erusev/parsedown`
+- `erusev/parsedown-extra`
+- `firebase/php-jwt`
+- `ksubileau/color-thief-php`
+- `league/flysystem`
+- `league/color-extractor`
+- `maennchen/zipstream-php`
+- `mongodb/mongodb`
+- `phpmailer/phpmailer`
 
 ## `modules`
 

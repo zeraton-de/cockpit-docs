@@ -1,26 +1,28 @@
+---
+sidebarDepth: 2
+---
 # Configuration
 
 Configuration is set during [bootstrapping](/documentation/bootstrapping.md) of the application.
 
+## Uncommon Variables
 
-# Uncommon Variables
+### charset
 
-## charset
+### autoload
 
-## autoload
+### route
 
-## route
+### helpers
 
-## helpers
+### base_url
 
-## base_url
+### base_route
 
-## base_route
+### base_host
 
-## base_host
+### base_port
 
-## base_port
+### docs_root
 
-## docs_root
-
-## site_url
+### site_url

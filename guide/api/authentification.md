@@ -11,7 +11,7 @@ Every API-call made to the `/api/*` endpoint needs to carry a `token` to authent
 ### Query Parameter
 
 ```js
-fetch('/api/collections/get/posts?token=xxtokenxx').then(res => 
+fetch('/api/collections/get/posts?token=xxtokenxx').then(res =>
     res.json()
 ).then(res =>
     console.log(res)

@@ -28,6 +28,7 @@ An asset field can reference an asset (e.g. file or pdf) you've uploaded in Cock
 A boolean field for true and false values.
 
 **Options:**
+
 ```json
 {
     "label": false,
@@ -35,11 +36,13 @@ A boolean field for true and false values.
     "cls": "" // custom class
 }
 ```
+
 ## Code
 
 Provides a code editor field.
 
 **Options:**
+
 ```json
 {
     "syntax": "text",
@@ -52,6 +55,7 @@ Provides a code editor field.
 Link other collection items.
 
 **Options:**
+
 ```json
 {
     "link": "collectionname",
@@ -66,6 +70,7 @@ Link other collection items.
 Provides a color chooser field (based on Spectrum.js).
 
 **Options:**
+
 ```json
 {
     "spectrum": {/* spectrum settings */}
@@ -77,6 +82,7 @@ Provides a color chooser field (based on Spectrum.js).
 Provides chooser for predefined colors
 
 **Options:**
+
 ```json
 {
     "size": "inherit",
@@ -89,6 +95,7 @@ Provides chooser for predefined colors
 Provides a date chooser field (based on Spectrum.js).
 
 **Options:**
+
 ```json
 {
     "weekstart": 0,
@@ -103,6 +110,7 @@ Provides a date chooser field (based on Spectrum.js).
 Provides a file chooser field (using Cockpits built-in finder module).
 
 **Options:**
+
 ```json
 {
     "cls": "",
@@ -115,6 +123,7 @@ Provides a file chooser field (using Cockpits built-in finder module).
 Manage images and additional meta information for each image.
 
 **Options:**
+
 ```json
 {
     "meta": {
@@ -130,7 +139,8 @@ Manage images and additional meta information for each image.
 
 HTML editor field with preview.
 
-Options
+**Options:**
+
 ```json
 {
     "iframe"         : false,
@@ -152,6 +162,7 @@ Options
 Choose an image and manage additional meta information.
 
 **Options:**
+
 ```json
 {
     "meta": {
@@ -163,11 +174,12 @@ Choose an image and manage additional meta information.
 }
 ```
 
-# Layout
+## Layout
 
 Layout editor
 
 **Options:**
+
 ```json
 {
     "components": {
@@ -185,6 +197,7 @@ Layout editior with preselected grid component
 Location chooser to get lat,lng values.
 
 **Options:**
+
 ```json
 {
     "zoomlevel": 13
@@ -196,6 +209,7 @@ Location chooser to get lat,lng values.
 Markdown editor field with preview.
 
 **Options:**
+
 ```json
 {
     "height": 500
@@ -207,6 +221,7 @@ Markdown editor field with preview.
 Select multiple values from a pre-defined list of options.
 
 **Options:**
+
 ```json
 {
     "options": "Option 1, Option 2, Option 3"
@@ -218,6 +233,7 @@ Select multiple values from a pre-defined list of options.
 JSON object editor.
 
 **Options:**
+
 ```json
 {
     "height": "300px",
@@ -230,6 +246,7 @@ JSON object editor.
 Password field.
 
 **Options:**
+
 ```json
 {
     "cls": ""
@@ -241,6 +258,7 @@ Password field.
 Rating field.
 
 **Options:**
+
 ```json
 {
     "mininmum": 0,
@@ -254,6 +272,7 @@ Rating field.
 Manage multiple values of fields.
 
 **Options:**
+
 ```json
 {
     "field": {"type": "text", "label": "Name"},
@@ -261,6 +280,7 @@ Manage multiple values of fields.
     "limit": null
 }
 ```
+
 or add field chooser
 
 ```json
@@ -277,6 +297,7 @@ or add field chooser
 Provides a selectbox.
 
 **Options:**
+
 ```json
 {
     "cls": "",
@@ -290,6 +311,7 @@ Provides a selectbox.
 Provides a field group.
 
 **Options:**
+
 ```json
 {
     "fields": [
@@ -304,6 +326,7 @@ Provides a field group.
 Manage a list of tags.
 
 **Options:**
+
 ```json
 {
     "autocomplete": [],
@@ -316,6 +339,7 @@ Manage a list of tags.
 Simple text input.
 
 **Options:**
+
 ```json
 {
   "cls": "",
@@ -334,6 +358,7 @@ Simple text input.
 Simple textarea field.
 
 **Options:**
+
 ```json
 {
   "cls": "",
@@ -351,6 +376,7 @@ Simple textarea field.
 Time picker field.
 
 **Options:**
+
 ```json
 {
   "cls": ""
@@ -362,6 +388,7 @@ Time picker field.
 A WYSIWYG editor field.
 
 **Options:**
+
 ```json
 {
   "cls": "",

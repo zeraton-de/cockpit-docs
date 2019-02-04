@@ -7,7 +7,7 @@ You can set up Cockpit with Docker by grabbing the [most recent image](https://h
 Create your container by running
 
 ```sh
-$ docker run -d --name cockpit -p 8080:80 agentejo/cockpit
+docker run -d --name cockpit -p 8080:80 agentejo/cockpit
 ```
 
 To complete the setup, open `http://localhost:8080/install` and follow the instructions there.
@@ -22,6 +22,7 @@ COPY config.php /var/www/html/config/config.php
 ```
 
 ## Docker Compose
+
 ### MongoDB
 
 For larger projects you may find you want to use MongoDB over the built-in SQLite. To do this, you’ll need to set up some environment variables in your container as well as include a custom `config.php` file that picks up these variables.

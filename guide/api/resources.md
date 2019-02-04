@@ -6,6 +6,7 @@ sidebarDepth: 2
 ## Users
 
 ### Authenticate Specific User
+
 |                |                         |
 |----------------|-------------------------|
 | URL            | `/api/cockpit/authUser` |
@@ -13,6 +14,7 @@ sidebarDepth: 2
 | Authentication | needed                  |
 
 **Request Body:**
+
 ```json
 {
   "user": "jankal",
@@ -21,6 +23,7 @@ sidebarDepth: 2
 ```
 
 **Response Body:**
+
 ```json
 {
   "user": "jankal",
@@ -53,6 +56,7 @@ For updating a users information, remember to always pass `user._id`!
 | Authentication | needed                  |
 
 **Request Body (Example):**
+
 ```json
 {
   "user": {
@@ -63,6 +67,7 @@ For updating a users information, remember to always pass `user._id`!
 ```
 
 **Response Body (Example):**
+
 ```json
 {
   "_id": "5b38gsab3a482doc2038634383",

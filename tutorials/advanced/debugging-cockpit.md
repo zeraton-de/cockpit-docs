@@ -6,7 +6,7 @@ For debugging create a file `config/bootstrap.php` and add
 <?php
 // view the debug info on top of the layout
 $app->on('app.layout.contentbefore', function(){
-    
+
     $vars = [
         'app_important_routes' => [
             'route' => $this['route'],
@@ -25,9 +25,7 @@ $app->on('app.layout.contentbefore', function(){
         // 'app_config' => $this->config, // config.yaml + app defaults
         // 'app' => $this, // the whole app, needs a few seconds to load/print
     ];
-    
     echo '<pre>' . print_r($vars, true) . '</pre>';
-    
 });
 ```
 
@@ -67,6 +65,4 @@ here: https://github.com/agentejo/cockpit/blob/next/bootstrap.php#L67 (between t
 
 to print it to your api output.
 
-## Debug Helper Kint Addon
-
-https://github.com/pauloamgomes/cockpit-cms-kint
+[Debug Helper Kint Addon](https://github.com/pauloamgomes/cockpit-cms-kint)

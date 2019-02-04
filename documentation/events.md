@@ -6,9 +6,9 @@ Triggered before an instace of `lib/FileStorage.php` is created and bound into
 the container.
 
 **Parameters:**
-* `&$storages` containing the current `filestorage` configuration (either
-  default or modified trough
-  [configuration](/guide/basics/configuration.md#filestorage-object-array)).
+
+- `&$storages` containing the current `filestorage` configuration (either
+  default or modified trough [configuration](/guide/basics/configuration.md#filestorage-object-array)).
 
 ## `cockpit.bootstrap`
 

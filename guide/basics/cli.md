@@ -23,7 +23,6 @@ Possible subcommands to export only certain types of data:
 * `./cp export/singletons`
 * `./cp export/forms`
 
-
 ### `./cp import`
 
 Imports data from a folder. It expects the structure of a cp export result.
@@ -53,7 +52,6 @@ Possible subcommands to flush only certain types of data:
 * `./cp flush/collections`
 * `./cp flush/singletons`
 * `./cp flush/forms`
-
 
 ### `./cp create-lang`
 

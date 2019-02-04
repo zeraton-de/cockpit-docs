@@ -7,10 +7,11 @@ sidebarDepth: 2
 ## Introduction
 
 Cockpit accepts multiple types of configuration:
-* `config/config.yaml` as the primary configuration file which also can be edited from the web interface via `Settings > Settings`
-* `config/config.php` - a PHP file returning an array of configuration values (same options as in the yaml file)
-* `.env` is used to override several deep-down constants used by Cockpit in multiple places (priority) ([more infos](/documentation/constants.md))
-* `defines.php` does also override several deep-down constants after `.env` 
+
+- `config/config.yaml` as the primary configuration file which also can be edited from the web interface via `Settings > Settings`
+- `config/config.php` - a PHP file returning an array of configuration values (same options as in the yaml file)
+- `.env` is used to override several deep-down constants used by Cockpit in multiple places (priority) ([more infos](/documentation/constants.md))
+- `defines.php` does also override several deep-down constants after `.env`
 
 The following describes common configuration variables and their default values which can be used in `config/config.(yaml|php)`. Less common variables are described [here](/documentation/configuration.md).
 
@@ -69,6 +70,7 @@ The connection string used to connect to the database.
 Cockpit uses `PHPMailer` as a utility for sending email. Therefor, options can be found at [PHPMailer Documentation](http://phpmailer.github.io/PHPMailer/).
 
 Example:
+
 ```yaml
 mailer:
     from      : contactform@example.com
@@ -139,9 +141,10 @@ Defines whether to use SMTP authentication (with credentials from `mailer.user` 
 What kind of encryption to use on the SMTP connection.
 
 Options:
-* `''`
-* `'ssl'`
-* `'tls'`
+
+- `''`
+- `'ssl'`
+- `'tls'`
 
 **Default:** `''`
 
@@ -165,10 +168,11 @@ An address mails shall be sent to in addition to the receiving party (carbon cop
 
 #### mailer.attachments (`array`)
 
-Attachments added to each mail sent by Cockpit.    
+Attachments added to each mail sent by Cockpit.
 This can either be:
-* A list of file paths to attach to the mails
-* A map (`[name => value]`) where `name` is the name the attachment shows up as and `value` being raw data
+
+- A list of file paths to attach to the mails
+- A map (`[name => value]`) where `name` is the name the attachment shows up as and `value` being raw data
 
 **Default:** `[]`
 
@@ -217,16 +221,18 @@ Authorization, Accept, Accept-Encoding, Cockpit-Token'`
 #### cors.allowCredentials (`string`)
 
 **Options:**
-* `true`
-* `false`
+
+- `true`
+- `false`
 
 **Default:** `'true'`
 
 #### cors.exposedHeaders (`string`)
 
 **Options:**
-* `true`
-* `false`
+
+- `true`
+- `false`
 
 **Default:** `'true'`
 
@@ -277,6 +283,7 @@ Connection string to either Redis or another SQLite file for cached storage.
 ### paths (`object/array`)
 
 **Defaults:**
+
 ```php
 [
     '#root'     => COCKPIT_DIR,
@@ -297,22 +304,25 @@ Connection string to either Redis or another SQLite file for cached storage.
 
 *(Note: any constants used here can be overwritten using `.env` or `defines.php` - most of them are automatically set in bootstrapping process)*
 
-###  filestorage (`object/array`)
+### filestorage (`object/array`)
 
-Defines the ways used by Cockpit to access specific data.    
+Defines the ways used by Cockpit to access specific data.
 Each location is described in the following way:
-* `adapter`
-* `args`
-* `mount`
-* `url`
+
+- `adapter`
+- `args`
+- `mount`
+- `url`
 
 The following adapters are available:
-* `League\Flysystem\Adapter\Local`
-* `League\Flysystem\Adapter\FTP`
-* `League\Flysystem\Adapter\FTPD`
-* `League\Flysystem\Adapter\SynologyFTP`
+
+- `League\Flysystem\Adapter\Local`
+- `League\Flysystem\Adapter\FTP`
+- `League\Flysystem\Adapter\FTPD`
+- `League\Flysystem\Adapter\SynologyFTP`
 
 **Defaults:**
+
 ```php
 'root' => [
     'adapter' => 'League\Flysystem\Adapter\Local',

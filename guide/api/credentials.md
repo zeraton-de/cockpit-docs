@@ -2,15 +2,15 @@
 
 Before accessing your data you need to create an API token. There are three types of API tokens availible within the Cockpit CMS:
 
-* Global full-access API-key
-* Custom API-keys
-* Per user API-keys
+- Global full-access API-key
+- Custom API-keys
+- Per user API-keys
 
 ## Obtaining a Global API Key
 
 Please go to `Settings > API Access` to generate a unique gloabl API token. You can re-generate the token anytime you want.
 
-![](@assets/webtoken.png)
+![Global API Key](@assets/webtoken.png)
 
 ## Configure Custom API keys
 
@@ -21,40 +21,46 @@ You can configure the permissions for this token by allowing certain URLs to be 
 **Examples:**
 
 1. Grant all permissions:
-```
-*
-```
+
+    ```text
+    *
+    ```
 
 2. Only allow access to **READ** singleton data:
-```
-/api/singletons/get/*
-```
+
+    ```text
+    /api/singletons/get/*
+    ```
 
 3. Only allow access to **READ** a defined list of cellections (here: pages & services):
-```
-/api/collections/get/(pages|services)
-```
+
+    ```text
+    /api/collections/get/(pages|services)
+    ```
 
 4. Grant access to **SUBMIT** all forms:
-```
-/api/forms/submit/*
-```
+
+    ```text
+    /api/forms/submit/*
+    ```
 
 5. Allow access to **WRITE** to all collections:
-```
-/api/collections/save/*
-```
+
+    ```text
+    /api/collections/save/*
+    ```
 
 6. Allow access to **READ** and **WRITE** a defined list of cellections (here: pages & services):
-```
-/api/collections/get/(pages|services)
-/api/collections/save/(pages|services)
-```
 
-![](@assets/customtokens.png)
+    ```text
+    /api/collections/get/(pages|services)
+    /api/collections/save/(pages|services)
+    ```
+
+![Custom Gloabl Tokens](@assets/customtokens.png)
 
 ## Obtaining a User-Token
 
 Please go to your user-account (either via the navbar for the current user or by going to `Settings > Accounts` and choosing the respective user) to obtain a user based API token. This token is restricted to the operations the obtaining user can perform. You can also re-generate these tokens anytime you want.
 
-![](@assets/usertoken.png)
+![User Tokens](@assets/usertoken.png)
