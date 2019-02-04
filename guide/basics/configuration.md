@@ -47,6 +47,13 @@ The base locale for all content and the application laguage.
 
 **Default:** `'en-US'`
 
+### allowed_uploads (`string`)
+
+A comma-seperated list of file types/extensions users will be allowed
+to upload.
+
+**Default:** `'*'`
+
 ### database (`object/array`)
 
  Database connection to a MongoDB server or SQLite directory.
@@ -64,6 +71,27 @@ The connection string used to connect to the database.
 #### databse.driverOptions (`array`)
 
 **Default:** `[]`
+
+### groups (`object/array`)
+
+Defines additional groups and privileges of users within these groups.
+Read more on permissions [here](/guide/basics/acl.md).
+
+**Example:**
+
+```yaml
+groups:
+  author:
+    $admin: false
+    $vars:
+      finder.path: /storage/upload
+      media.path : /storage/media
+      finder.allowed_uploads: png, jpg, jpeg
+      assets.allowed_uploads: png, jpg, jpeg
+    cockpit:
+      backend: true
+      finder: true
+```
 
 ### mailer (`array`)
 
@@ -154,15 +182,15 @@ Options array passed to `stream_context_create` when connecting via SMTP.
 
 **Default:** `[]`
 
-#### mailer.bcc (`string`)
+#### mailer.bcc (`array`)
 
-An address mails shall be sent to without the receiving partys notice (blind carbon copy).
+A list of addresses, mails shall be sent to without the receiving partys notice (blind carbon copy).
 
 **Default:** `''`
 
-#### mailer.cc (`string`)
+#### mailer.cc (`array`)
 
-An address mails shall be sent to in addition to the receiving party (carbon copy).
+A list of addresses, mails shall be sent to in addition to the receiving party (carbon copy).
 
 **Default:** `''`
 
