@@ -9,6 +9,7 @@ module.exports = {
         { text: 'Home', link: '/' },
         { text: 'Guide', link: '/guide/' },
         { text: 'Documentation', link: '/documentation/' },
+        { text: 'Tutorials', link: '/tutorials/' },
         { text: 'Community Forum', link: 'https://discourse.getcockpit.com'},
         { text: 'Zeraton', link: 'https://zeraton.de' },
         { text: 'Imprint', link: '/imprint.md' },
@@ -60,6 +61,24 @@ module.exports = {
           'services',
           'modules',
           'helpers',
+        ],
+
+        '/tutorials/': [
+          '',
+          {
+            title: 'Basic',
+            collapsable: false,
+            children: [
+              'basic/'
+            ]
+          },
+          {
+            title: 'Advanced',
+            collapsable: false,
+            children: [
+              'advanced/debugging-cockpit'
+            ]
+          }
         ],
   
         // fallback
