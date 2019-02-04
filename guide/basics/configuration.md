@@ -172,6 +172,64 @@ This can either be:
 
 **Default:** `[]`
 
+### cors (`object/array`)
+
+::: tip
+You can completely disable CORS when you don't access the API from within a
+browser or your Cockpit installation is located on the same domain as sites
+loading content from it's API.
+:::
+
+**Set the following to disable CORS:**
+
+```yaml
+cors:
+    allowedHeaders: ''
+    allowedMethods: ''
+    allowedOrigins: 'null'
+    maxAge: '1000'
+    allowCredentials: 'false'
+    exposedHeaders: 'false'
+```
+
+Settings for sending the right headers concerning CORS
+(Cross-Origin-Resource-Sharing). CORS is an important browser security feature -
+it regulates which sites and scripts from these (origins) can make requests to
+different URLs than where they were originally received from.
+
+#### cors.allowedHeaders (`string`)
+
+**Default:** `'X-Requested-With, Content-Type, Origin, Cache-Control, Pragma,
+Authorization, Accept, Accept-Encoding, Cockpit-Token'`
+
+#### cors.allowedMethods (`string`)
+
+**Default:** `'PUT, POST, GET, OPTIONS, DELETE'`
+
+#### cors.allowedOrigins (`string`)
+
+**Default:** `'*'`
+
+#### cors.maxAge (`string/integer`)
+
+**Default:** `1000`
+
+#### cors.allowCredentials (`string`)
+
+**Options:**
+* `true`
+* `false`
+
+**Default:** `'true'`
+
+#### cors.exposedHeaders (`string`)
+
+**Options:**
+* `true`
+* `false`
+
+**Default:** `'true'`
+
 ## Uncommon Variables
 
 ### base_route (`string`)
@@ -308,61 +366,3 @@ A list of modules / plugins disabled.
 ::: tip
 Users of older Cockpit versions which were upgraded can either remove `modules/Regions` or disable it here when wanting to get rid of the deprectaed [Region type](/guide/basics/concepts.md#regions).
 :::
-
-### cors (`object/array`)
-
-::: tip
-You can completely disable CORS when you don't access the API from within a
-browser or your Cockpit installation is located on the same domain as sites
-loading content from it's API.
-:::
-
-**Set the following to disable CORS:**
-
-```yaml
-cors:
-    allowedHeaders: ''
-    allowedMethods: ''
-    allowedOrigins: 'null'
-    maxAge: '1000'
-    allowCredentials: 'false'
-    exposedHeaders: 'false'
-```
-
-Settings for sending the right headers concerning CORS
-(Cross-Origin-Resource-Sharing). CORS is an important browser security feature -
-it regulates which sites and scripts from these (origins) can make requests to
-different URLs than where they were originally received from.
-
-#### cors.allowedHeaders (`string`)
-
-**Default:** `'X-Requested-With, Content-Type, Origin, Cache-Control, Pragma,
-Authorization, Accept, Accept-Encoding, Cockpit-Token'`
-
-#### cors.allowedMethods (`string`)
-
-**Default:** `'PUT, POST, GET, OPTIONS, DELETE'`
-
-#### cors.allowedOrigins (`string`)
-
-**Default:** `'*'`
-
-#### cors.maxAge (`string/integer`)
-
-**Default:** `1000`
-
-#### cors.allowCredentials (`string`)
-
-**Options:**
-* `true`
-* `false`
-
-**Default:** `'true'`
-
-#### cors.exposedHeaders (`string`)
-
-**Options:**
-* `true`
-* `false`
-
-**Default:** `'true'`
