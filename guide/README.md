@@ -33,7 +33,7 @@ Cockpit is focusing just on the back-end work to manage content. Rather than wor
 - **Apache** (with mod_rewrite enabled) or **nginx**
 - Any modern browser
 
-------------------
+---
 
 **That's it.** No generation or build scripts, no heavy-weight PHP libraries or dependencies. Cockpit was successfully tested on Apache and nginx.
 
