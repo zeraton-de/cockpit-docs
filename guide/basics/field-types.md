@@ -1,6 +1,8 @@
 # Field-Types
 
-In Cockpit you can build custom content models defined by a collection of different field types.
+In Cockpit you can build custom content models defined by a collection of
+different field types. Most field types can have different options which
+influence their behaviour. Options are stored as a JSON-object.
 
 ## Access-List
 
