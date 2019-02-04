@@ -55,7 +55,7 @@ For updating a users information, remember to always pass `user._id`!
 | Method         | `POST`                  |
 | Authentication | needed                  |
 
-**Request Body (Example):**
+**Request Body:**
 
 ```json
 {
@@ -66,7 +66,7 @@ For updating a users information, remember to always pass `user._id`!
 }
 ```
 
-**Response Body (Example):**
+**Response Body:**
 
 ```json
 {
@@ -74,6 +74,67 @@ For updating a users information, remember to always pass `user._id`!
   "email": "info@zeraton.de",
   "_modified": 1549283087
 }
+```
+
+### List All Existing Users
+
+|                |                         |
+|----------------|-------------------------|
+| URL            | `/api/cockpit/listUsers` |
+| Method         | `POST`                  |
+| Authentication | needed                  |
+
+**Request Body:** *Empty*
+
+**Response Body:**
+
+```json
+[
+  {
+    "user": "chris",
+    "email": "chris@zeraton.de",
+    "active": true,
+    "group": "admin",
+    "i18n": "en",
+    "name": "Christoph Gampe",
+    "_modified": 1530477177,
+    "_created": 1530477177,
+    "_id": "re3xk30umlc36vjb1qnnmeeuq2"
+  },
+  {
+    "user": "jankal",
+    "name": "Alexander Jank",
+    "email": "info@zeraton.de",
+    "active": true,
+    "group": "admin",
+    "i18n": "en",
+    "_created": 1530457915,
+    "_modified": 1549283087,
+    "_id": "5b38gsab3a482doc2038634383"
+  },
+  {
+    "user": "laura@zeraton.de",
+    "email": "laura@zeraton.de",
+    "active": true,
+    "group": "admin",
+    "i18n": "en",
+    "name": "Laura",
+    "_modified": 1539082023,
+    "_created": 1538384610,
+    "_id": "snot3hds8n8cgv2ichv0bnr1hv"
+  },
+  {
+    "user": "test",
+    "email": "test@zeraton.de",
+    "active": false,
+    "group": "test",
+    "i18n": "en",
+    "name": "test",
+    "_modified": 1530462763,
+    "_created": 1530459262,
+    "_id": "ynrcl9nbvf0m536i6ca15kooid"
+  }
+]
 ```
 
 ## Assets/Images
