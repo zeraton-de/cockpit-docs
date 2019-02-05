@@ -27,11 +27,16 @@ Cockpit is focusing just on the back-end work to manage content. Rather than wor
 ## Requirements
 
 - **PHP >= 7.1**
-- PDO with **SQLite** support (or MongoDB)
-- (optional: Redis)
-- GD, Zip extension enabled
-- **Apache** (with mod_rewrite enabled) or **nginx**
-- Any modern browser
+- PHP extensions enabled:
+  - iconv
+  - gd
+  - pdo
+  - zip
+  - opcache
+  - pdo_sqlite
+- SQLite or MongoDB (needs mongodb from PECL besides)
+- **Apache** (with mod_rewrite and mod_expires) or **nginx**
+- Any modern Browser
 
 ---
 
