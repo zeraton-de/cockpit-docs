@@ -13,6 +13,12 @@ Cockpit accepts multiple types of configuration:
 - `.env` is used to override several deep-down constants used by Cockpit in multiple places (priority) ([more infos](/documentation/constants.md))
 - `defines.php` does also override several deep-down constants after `.env`
 
+::: tip
+When the directory `config` does not exist inside the root of your installation,
+you will have to create it in order to then create your own
+`config/config.(yaml|php)`.
+:::
+
 The following describes common configuration variables and their default values which can be used in `config/config.(yaml|php)`. Less common variables are described [here](/documentation/configuration.md).
 
 ## Common Variables
@@ -49,7 +55,7 @@ The base locale for all content and the application laguage.
 
 ### allowed_uploads (`string`)
 
-A comma-seperated list of file types/extensions users will be allowed
+A comma-separated list of file types/extensions users will be allowed
 to upload.
 
 **Default:** `'*'`
@@ -64,11 +70,11 @@ The connection string used to connect to the database.
 
 **Default:** `'mongolite://storage/data'`
 
-#### databse.options (`array`)
+#### database.options (`array`)
 
 **Default:** `['db' => 'cockpitdb']`
 
-#### databse.driverOptions (`array`)
+#### database.driverOptions (`array`)
 
 **Default:** `[]`
 
@@ -280,7 +286,7 @@ This is the base path where Cockpits PHP source code (files) is located.
 
 ### session.name (`string`)
 
-A custom name for the PHP session used to store authentification and user data for the current session.
+A custom name for the PHP session used to store authentication and user data for the current session.
 
 **Default:** `md5(__DIR__)`
 
@@ -402,5 +408,5 @@ A list of modules / plugins disabled.
 **Default:** `[]`
 
 ::: tip
-Users of older Cockpit versions which were upgraded can either remove `modules/Regions` or disable it here when wanting to get rid of the deprectaed [Region type](/guide/basics/concepts.md#regions).
+Users of older Cockpit versions which were upgraded can either remove `modules/Regions` or disable it here when wanting to get rid of the deprecated [Region type](/guide/basics/concepts.md#regions).
 :::
