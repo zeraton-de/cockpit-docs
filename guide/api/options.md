@@ -3,11 +3,11 @@ sidebarDepth: 2
 ---
 # Common Options
 
-## filter (`object/string`)
+## filter (`object/array`)
 
 To be added...
 
-## sort (`object/string`)
+## sort (`object/array`)
 
 Determines in which order items will be fetched from the data-source.
 The `sort` option is a `object` where each key (property name) should be the

@@ -152,9 +152,9 @@ Retrieve a list of available assets and assets folders if there are any.
 **Options:**
 | Option   | Default | Value / Further Docs                                   |
 | -------- | ------- | ------------------------------------------------------ |
-| `filter` | `null`  | see [here](/guide/api/options.md#filter-object-string) |
+| `filter` | `null`  | see [here](/guide/api/options.md#filter-object-array)  |
 | `limit`  | `null`  | `int`                                                  |
-| `sort`   | `null`  | see [here](/guide/api/options.md#sort-object-string)   |
+| `sort`   | `null`  | see [here](/guide/api/options.md#sort-object-array)    |
 | `skip`   | `null`  | `int`                                                  |
 | `folder` | `''`    | `string`                                               |
 
