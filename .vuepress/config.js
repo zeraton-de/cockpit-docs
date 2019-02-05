@@ -37,6 +37,7 @@ module.exports = {
               'api/',
               'api/authentification',
               'api/credentials',
+              'api/options',
               'api/resources'
             ]
           },
