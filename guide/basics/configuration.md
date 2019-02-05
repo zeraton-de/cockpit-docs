@@ -53,6 +53,19 @@ The base locale for all content and the application laguage.
 
 **Default:** `'en-US'`
 
+### languages (`object/array`)
+
+A list of languages support for field localization.
+
+**Default:** `[]`
+
+**Example:**
+
+```yaml
+langauges:
+  de: German
+```
+
 ### allowed_uploads (`string`)
 
 A comma-separated list of file types/extensions users will be allowed
