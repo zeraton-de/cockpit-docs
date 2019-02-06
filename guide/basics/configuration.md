@@ -49,7 +49,7 @@ A key for encrypting `storage/api.keys.php` where api tokens are stored. The fil
 
 ### i18n (`string`)
 
-The base locale for all content and the application laguage.
+The base locale for all content and the application language.
 
 **Default:** `'en-US'`
 
@@ -62,7 +62,7 @@ A list of languages support for field localization.
 **Example:**
 
 ```yaml
-langauges:
+languages:
   de: German
 ```
 
