@@ -62,4 +62,4 @@ the API.
 
 ## Singletons <Badge text="> 0.6.0" type="tip" vertical="middle"/>
 
-## Froms
+## Forms
