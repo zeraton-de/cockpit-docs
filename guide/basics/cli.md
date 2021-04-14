@@ -60,4 +60,4 @@ Create language file for the admin ui in config/cockpit/i18n.
 **Arguments:**
 
 * `--lang`: target language (e.g. `de`, `en`)
-* `--language`: target language written out (e.g. `Deustch`, `English`)
+* `--language`: target language written out (e.g. `Deutsch`, `English`)
